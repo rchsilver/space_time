@@ -2,7 +2,7 @@ import { FastifyInstance } from "fastify";
 import { prisma } from "../lib/prisma";
 import { paramsSchema, bodySchema } from "../schemas/memories.schema";
 
-async function memoriesRoutes(app: FastifyInstance) {
+export async function memoriesRoutes(app: FastifyInstance) {
   app.get("/memories", async () => {
     const memories = await prisma.memory.findMany({
       orderBy: {
@@ -70,5 +70,3 @@ async function memoriesRoutes(app: FastifyInstance) {
     });
   });
 }
-
-export { memoriesRoutes };
