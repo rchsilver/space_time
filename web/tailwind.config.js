@@ -11,6 +11,7 @@ module.exports = {
         sans: "var(--font-roboto)",
         alt: "var(--font-bai-jamjuree)",
       },
+
       colors: {
         gray: {
           50: "#eaeaea",
@@ -72,6 +73,22 @@ module.exports = {
           800: "#027435",
           900: "#025929",
         },
+      },
+
+      blur: {
+        full: "194px",
+      },
+
+      backgroundImage: {
+        stripes:
+          "linear-gradient(to bottom, rgb(255, 255, 255, 0.1), rgb(255, 255, 255, 0.1) 12.5%, transparent 12.5%, transparent)",
+      },
+
+      backgroundSize: {
+        stripes: "100% 8px",
+      },
+      fontSize: {
+        "5xl": "2.5rem",
       },
     },
   },
