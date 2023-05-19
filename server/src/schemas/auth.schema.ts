@@ -10,4 +10,4 @@ const userSchema = z.object({
   avatar_url: z.string().url(),
 });
 
-export { codeSchema };
+export { codeSchema, userSchema };
