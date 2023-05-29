@@ -1,12 +1,11 @@
-import "@fastify/jwt";
+import '@fastify/jwt'
 
-declare module "@fastify/jwt" {
+declare module '@fastify/jwt' {
   export interface FastifyJWT {
     user: {
-      sub: string;
-      name: string;
-      avatarUrl: string;
-    };
-    t;
+      sub: string
+      name: string
+      avatarUrl: string
+    }
   }
 }
